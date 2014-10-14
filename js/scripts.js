@@ -1,12 +1,12 @@
 $(document).ready(function(){
-  $('#MainLogo, #musicLayout, #mediaLayout, #liveLayout, #facebook').hide();
-  $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
+  $('#MainLogo, #facebook').hide();
+  // $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
 
-  $('#MainLogo').click(function() {
-  $('#musicLayout, #mediaLayout, #liveLayout, #facebook').hide();
-  $('#musicLayout, #mediaLayout, #liveLayout').css("bottom","-1000px").removeClass("col-md-11").addClass("col-md-9");
-  $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
-});
+  // $('#MainLogo').click(function() {
+  // $('#facebook').hide();
+  // $('#musicLayout, #mediaLayout, #liveLayout').css("bottom","-1000px").removeClass("col-md-11").addClass("col-md-9");
+  // $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
+// });
 
 //sidebar Function
   $("#miniBar")
@@ -38,12 +38,12 @@ $(document).ready(function(){
       $('#musicBar').css("font-size","1px");
   });
 
-  $('#musicIcon').click(function(){
-    $('#liveLayout, #mediaLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
-    $('#musicLayout').show(function(){
-      $(this).css("bottom","-1000px").animate({ "bottom": "+=1000px" }, 500 );
-    });
-  });
+  // $('#musicIcon').click(function(){
+  //   $('#liveLayout, #mediaLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
+  //   $('#musicLayout').show(function(){
+  //     $(this).css("bottom","-1000px").animate({ "bottom": "+=1000px" }, 500 );
+  //   });
+  // });
 
 //media Icon Function
   $('#mediaIcon')
@@ -53,12 +53,12 @@ $(document).ready(function(){
       $("#mediaBar").animate({"opacity": "0"}, 100).css("font-size","1px");
   });
 
-  $('#mediaIcon').click(function(){
-    $('#liveLayout, #musicLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
-    $('#mediaLayout').show(function(){
-      $(this).css("bottom","-1000px").animate({ "bottom": "+=1000px" }, 500 );
-    });
-  });
+  // $('#mediaIcon').click(function(){
+  //   $('#liveLayout, #musicLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
+  //   $('#mediaLayout').show(function(){
+  //     $(this).css("bottom","-1000px").animate({ "bottom": "+=1000px" }, 500 );
+  //   });
+  // });
 
 //live Icon Function
   $('#liveIcon')
@@ -68,25 +68,25 @@ $(document).ready(function(){
       $("#liveBar").animate({"opacity": "0"}, 100).css("font-size","1px");
   });
 
-  $('#liveIcon').click(function(){
-    $('#mediaLayout, #musicLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
-    $('#liveLayout').show(function(){
-      $(this).css("bottom","-1000px").animate({ "bottom": "+=1000px" }, 500 );
-    });
-  });
+  // $('#liveIcon').click(function(){
+  //   $('#mediaLayout, #musicLayout').animate({ "bottom": "-1000px" }, 300, function(){$(this).hide();});
+  //   $('#liveLayout').show(function(){
+  //     $(this).css("bottom","-1000px").animate({ "bottom": "+=1000px" }, 500 );
+  //   });
+  // });
 
 //Social Tab Function
-  $('#facebookTab').click(function(){
-    $('#twitterTab').css('background','rgba(255, 255, 255, .5)');
-    $(this).css('background','rgba(255, 255, 255, .8)');
-    $('#twitter').hide();
-    $('#facebook').show();
-  });
+  // $('#facebookTab').click(function(){
+  //   $('#twitterTab').css('background','rgba(255, 255, 255, .5)');
+  //   $(this).css('background','rgba(255, 255, 255, .8)');
+  //   $('#twitter').hide();
+  //   $('#facebook').show();
+  // });
 
-  $('#twitterTab').click(function(){
-    $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
-    $(this).css('background','rgba(255, 255, 255, .8)');
-    $('#facebook').hide();
-    $('#twitter').show();
-  });
+  // $('#twitterTab').click(function(){
+  //   $('#facebookTab').css('background','rgba(255, 255, 255, .5)');
+  //   $(this).css('background','rgba(255, 255, 255, .8)');
+  //   $('#facebook').hide();
+  //   $('#twitter').show();
+  // });
 });
